@@ -37,5 +37,35 @@ def manage_students():
 # Call the function and print the result
 print('Exercise 1:', manage_students())
 
+##################
+##################
+
+# Exercise 2: Loop and String Concatenation
+#
+# Create a tuple named foods containing the same number of foods (strings) as there are names in the students list.
+# Create a variable named meal and assign an empty string to it.
+# Use a for loop to iterate over the strings in foods and append each string to meal.
+
+def combine_foods():
+    # your code here
+    # variable bc no trailing comma
+    # append method only works on lists, but this is a string...
+    meal = ''
+    # tuple aka mutable parentheses
+    foods = ('sushi', 'pizza', 'pho', 'twizzlers')
+
+    for food in foods:
+        # add a comma and space to format meal like a list
+        meal += food + ', '
+    
+    # remove comma and space after the last string
+    # meal.strip cannot remove commas...
+    # use slice notation : to remove last two characters
+    # meal[start:stop:step]
+    return meal[:-2]
+
+# Call the function and print the result
+print('Exercise 2:', combine_foods())
+
 
 

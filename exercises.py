@@ -108,3 +108,31 @@ def hometown_info():
 # Call the function and print the result
 print('Exercise 4:', hometown_info())
 
+##################
+##################
+
+# Exercise 5: Iterating Over Dictionary Items
+#
+# Define an empty list named home_town_items.
+# Use a for loop to iterate over the key: value pairs in the home_town dictionary and append a string with the following format to home_town_items: "<key> = <value>"
+
+def list_home_town_items():
+    # your code here
+    home_town = {
+        'city': 'Atlanta',
+        'state': 'Georgia',
+        'population': 'lots'
+    }
+
+    home_town_items = []
+
+    # .items() method returns a list of tuples, each containing a key-value pair from the dictionary
+    # iterating over each item in the dictionary.. unpacking the key and value from each item?
+    for key, value in home_town.items():
+        # format the string and append to the list
+        home_town_items.append(f"{key} = {value}")
+
+    return home_town_items
+
+# Call the function and print the result
+print('Exercise 5:', list_home_town_items())
